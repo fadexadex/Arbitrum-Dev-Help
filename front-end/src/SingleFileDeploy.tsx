@@ -93,7 +93,7 @@ export default function SingleFileDeploy() {
     formData.append("privateKey", privateKey);
 
     try {
-      const response = await fetch("http://localhost:6190/api/deploy", {
+      const response = await fetch("https://arbitrum-dev-help-production.up.railway.app/api/deploy", {
         method: "POST",
         body: formData,
       });

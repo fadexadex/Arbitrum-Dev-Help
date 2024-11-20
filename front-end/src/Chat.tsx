@@ -138,7 +138,7 @@ export default function Chat() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:6190/api/chat", {
+      const response = await fetch("https://arbitrum-dev-help-production.up.railway.app/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: input }),
