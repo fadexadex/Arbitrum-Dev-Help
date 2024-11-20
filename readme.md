@@ -14,7 +14,7 @@ Arbitrum dApp Dashboard is a comprehensive platform designed to streamline the d
 
 **Live Demo:** [Loom Video](https://www.loom.com/share/2e494ae9ebcb4afcbb48f42a1fa8ea8f)
 
-**Live Url:** [https://arbitrum-dapp-dashboard.example.com](https://arbitrum-dapp-dashboard.example.com)
+**Live Url:** [Arbitrum Dev Help](https://arbitrum-dev-help.vercel.app/)
 
 ### Problem Statement
 
