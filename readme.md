@@ -7,9 +7,6 @@
 - [Architecture](#architecture)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -73,10 +70,9 @@ To set up the Arbitrum dApp Dashboard locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/arbitrum-dapp-dashboard.git
-   cd arbitrum-dapp-dashboard
-   ```
-
+   git clone https://github.com/fadexadex/Arbitrum-Dev-Help.git
+   cd Arbitrum-Dev-Help
+   
 2. Install dependencies for both front-end and back-end:
 
    ```bash
@@ -104,41 +100,16 @@ To run the application locally:
 1. Start the back-end server:
 
    ```bash
-   cd server
+   cd backend
    npm start
    ```
 
 2. In a new terminal, start the front-end development server:
 
    ```bash
-   cd client
-   npm start
+   cd front-end
+   npm run dev
    ```
 
-3. Open your browser and navigate to `http://localhost:3000` to access the Arbitrum dApp Dashboard.
+3. Open your browser and navigate to `http://localhost:5173` to access the Arbitrum dApp Dashboard.
 
-## Deployment
-
-The Arbitrum dApp Dashboard can be deployed to various cloud platforms. Here's a general outline for deployment:
-
-1. Build the front-end:
-
-   ```bash
-   cd client
-   npm run build
-   ```
-
-2. Deploy the back-end to a Node.js hosting service (e.g., Heroku, DigitalOcean, AWS):
-
-   - Set up the necessary environment variables on your hosting platform
-   - Deploy the contents of the `server` directory
-
-3. Deploy the front-end build to a static site hosting service (e.g., Netlify, Vercel, AWS S3):
-
-   - Deploy the contents of the `client/build` directory
-
-4. Configure your front-end deployment to point to your back-end API URL
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
