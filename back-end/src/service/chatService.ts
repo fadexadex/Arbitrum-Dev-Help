@@ -37,7 +37,7 @@ export const getGroqChatCompletion = async (prompt: string) => {
       },
     ],
 
-    model: "llama3-8b-8192",
+    model: "openai/gpt-oss-120b",
 
     temperature: 0.5,
 
