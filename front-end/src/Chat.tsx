@@ -138,7 +138,7 @@ export default function Chat() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://arbitrum-e5h8dmbsd4aaaxcy.southafricanorth-01.azurewebsites.net/api/chat", {
+      const response = await fetch("https://arbitrum-27b1e77aaa39.herokuapp.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: input }),

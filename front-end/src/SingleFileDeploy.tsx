@@ -93,7 +93,7 @@ export default function SingleFileDeploy() {
     formData.append("privateKey", privateKey);
 
     try {
-      const response = await fetch("https://arbitrum-e5h8dmbsd4aaaxcy.southafricanorth-01.azurewebsites.net/api/deploy", {
+      const response = await fetch("https://arbitrum-27b1e77aaa39.herokuapp.com/api/deploy", {
         method: "POST",
         body: formData,
       });
