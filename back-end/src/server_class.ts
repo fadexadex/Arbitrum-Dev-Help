@@ -38,7 +38,7 @@ export class Server {
   public startApp() {
     this.enableMiddlewares();
     this.configureRouting();
-    this.connectToDatabase();
+    // this.connectToDatabase();
     this.app.listen(this.port, () => {
       console.log(`Server is running on port ${this.port}`);
     });
