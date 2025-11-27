@@ -1,5 +1,7 @@
 "use client";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "https://arbitrum-dev-help.onrender.com";
+
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Loader2, User, Bot } from 'lucide-react';
@@ -138,7 +140,7 @@ export default function Chat() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://arbitrum-27b1e77aaa39.herokuapp.com/api/chat", {
+      const response = await fetch(`${BACKEND_URL}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: input }),

@@ -1,5 +1,7 @@
 "use client";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "https://arbitrum-dev-help.onrender.com";
+
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -93,7 +95,7 @@ export default function SingleFileDeploy() {
     formData.append("privateKey", privateKey);
 
     try {
-      const response = await fetch("https://arbitrum-27b1e77aaa39.herokuapp.com/api/deploy", {
+      const response = await fetch(`${BACKEND_URL}/api/deploy`, {
         method: "POST",
         body: formData,
       });
